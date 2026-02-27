@@ -1,0 +1,69 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: windows-2022
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          global-json-file: global.json
+          cache: true
+          cache-dependency-path: |
+            src/EorzeanMegaArcana/packages.lock.json
+
+      - name: Restore
+        run: dotnet restore SwamiSophie.sln
+
+      - name: Download Dalamud
+        shell: powershell
+        run: |
+          Invoke-WebRequest -Uri https://goatcorp.github.io/dalamud-distrib/latest.zip -OutFile latest.zip
+          Expand-Archive -Force latest.zip "$env:AppData\XIVLauncher\addon\Hooks\dev"
+
+      - name: Build
+        run: dotnet build SwamiSophie.sln -c Release --no-restore -clp:ErrorsOnly
+
+      - name: Verify packaged artifact contents
+        shell: powershell
+        run: |
+          Add-Type -AssemblyName System.IO.Compression.FileSystem
+          $zipPath = Resolve-Path 'src\EorzeanMegaArcana\bin\Release\EorzeanMegaArcana\latest.zip'
+          $archive = [IO.Compression.ZipFile]::OpenRead($zipPath)
+          try {
+            $entries = $archive.Entries.FullName
+            $entries | Sort-Object | ForEach-Object { Write-Host $_ }
+            $required = @(
+              'EorzeanMegaArcana.dll',
+              'EorzeanMegaArcana.json',
+              'data\rules\doctrine.json',
+              'data\rules\spreads.json',
+              'data\rules\output_modes.json'
+            )
+            foreach ($requiredEntry in $required) {
+              if (-not ($entries -contains $requiredEntry)) {
+                throw "Required release artifact missing from latest.zip: $requiredEntry"
+              }
+            }
+            if (-not ($entries | Where-Object { $_ -like 'data\strata\*.json' })) {
+              throw 'No data/strata JSON files were found in latest.zip.'
+            }
+          }
+          finally {
+            $archive.Dispose()
+          }
+
+      - name: Test
+        run: dotnet test tests/EorzeanMegaArcana.Tests/EorzeanMegaArcana.Tests.csproj -c Release --no-build -clp:ErrorsOnly
