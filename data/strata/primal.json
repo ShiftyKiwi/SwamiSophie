@@ -1,0 +1,354 @@
+[
+  {
+    "id": "primal-ifrit",
+    "name": "Ifrit, Lord of the Forge",
+    "stratum": "Primal",
+    "element": "Fire",
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 2,
+    "core": "Urgent appetite and forceful will suggest the matter is being heated toward a decisive confrontation.",
+    "shadow": "Intensity becomes domination when the desire to prevail consumes proportion.",
+    "astralNote": "Its astral note points toward action that is bold, immediate, and difficult to ignore.",
+    "umbralNote": "Its umbral note suggests reducing provocation before the temperature rises further.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-shiva",
+    "name": "Shiva, Lady of Stillness",
+    "stratum": "Primal",
+    "element": "Ice",
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -2,
+    "core": "Severe clarity and emotional cold suggest the pattern is narrowing toward a refined but costly truth.",
+    "shadow": "Stillness becomes estrangement when feeling is frozen out of judgment entirely.",
+    "astralNote": "Its astral note indicates precision can be useful if it does not harden into cruelty.",
+    "umbralNote": "Its umbral note supports distance, restraint, and carefully bounded contact.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-ramuh",
+    "name": "Ramuh, Keeper of Verdicts",
+    "stratum": "Primal",
+    "element": "Lightning",
+    "rank": null,
+    "polarity": "Balanced",
+    "polarityWeight": 0,
+    "core": "Heavy judgment and accumulated knowledge suggest the pattern is approaching a charged decision point.",
+    "shadow": "Judgment becomes overreach when certainty is claimed beyond what the evidence supports.",
+    "astralNote": "Its astral note points toward a firm decision backed by careful reasoning.",
+    "umbralNote": "Its umbral note suggests pausing before delivering the verdict.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-titan",
+    "name": "Titan, Lord of Crags",
+    "stratum": "Primal",
+    "element": "Earth",
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -2,
+    "core": "Massive resistance suggests the matter is being anchored by weight, duty, or refusal to yield.",
+    "shadow": "Stability becomes obstruction when endurance is used to deny all change.",
+    "astralNote": "Its astral note points toward using solid ground to support a necessary push.",
+    "umbralNote": "Its umbral note suggests ceasing direct collision and studying what truly holds the field in place.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-garuda",
+    "name": "Garuda, Lady of Gales",
+    "stratum": "Primal",
+    "element": "Wind",
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 1,
+    "core": "Violent motion suggests that scattered tensions are gathering into a sharper and more difficult current.",
+    "shadow": "Freedom becomes predation when every limit is treated as an insult to be torn away.",
+    "astralNote": "Its astral note points toward swift movement and decisive repositioning.",
+    "umbralNote": "Its umbral note suggests avoiding needless exposure while the winds remain unstable.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-leviathan",
+    "name": "Leviathan, Lord of the Whorl",
+    "stratum": "Primal",
+    "element": "Water",
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -1,
+    "core": "A rising tide suggests the matter is larger and more consuming than it first appeared.",
+    "shadow": "Adaptation becomes surrender when the current is obeyed without any retained center.",
+    "astralNote": "Its astral note points toward moving with the tide while preserving a clear aim.",
+    "umbralNote": "Its umbral note suggests bracing for the surge before attempting to redirect it.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-good-king-moggle-mog-xii",
+    "name": "Good King Moggle Mog XII",
+    "stratum": "Primal",
+    "element": "Wind",
+    "rank": null,
+    "polarity": "Balanced",
+    "polarityWeight": 0,
+    "core": "Layered ceremony and spectacle suggest the matter may be driven by performance as much as substance.",
+    "shadow": "Pageantry becomes disorder when the chorus drowns out the central truth.",
+    "astralNote": "Its astral note points toward coordinating many voices without losing the principal aim.",
+    "umbralNote": "Its umbral note suggests stripping away some ornament before trusting what remains.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-odin",
+    "name": "Odin, the Dark Rider",
+    "stratum": "Primal",
+    "element": null,
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -2,
+    "core": "A singular and cutting will suggests the pattern is approaching a moment where one stroke may divide before it heals.",
+    "shadow": "Decisiveness becomes devastation when separation is chosen for its own purity.",
+    "astralNote": "Its astral note points toward making the necessary cut cleanly and without delay.",
+    "umbralNote": "Its umbral note suggests questioning whether the severing is truly the only path left.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-bahamut",
+    "name": "Bahamut, Dread Wyrm",
+    "stratum": "Primal",
+    "element": "Fire",
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 2,
+    "core": "Overwhelming force suggests the matter is carrying more destructive potential than any ordinary measure can contain.",
+    "shadow": "Magnitude becomes annihilation when power is admired more than it is governed.",
+    "astralNote": "Its astral note points toward acknowledging the true scale of the threat before acting.",
+    "umbralNote": "Its umbral note suggests protecting what can still endure rather than contesting the blast directly.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-ravana",
+    "name": "Ravana, Lord of the Hive",
+    "stratum": "Primal",
+    "element": "Fire",
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 1,
+    "core": "Martial fervor suggests the matter is being sharpened through challenge, pride, and direct contest.",
+    "shadow": "Valor becomes appetite when conflict is pursued for the thrill it creates rather than the truth it reveals.",
+    "astralNote": "Its astral note points toward meeting the test directly and with disciplined force.",
+    "umbralNote": "Its umbral note suggests refusing any duel that exists only to feed escalation.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-bismarck",
+    "name": "Bismarck, Lord of Mists",
+    "stratum": "Primal",
+    "element": "Wind",
+    "rank": null,
+    "polarity": "Balanced",
+    "polarityWeight": 0,
+    "core": "Great drifting force suggests the question may be carried by scale and momentum rather than close control.",
+    "shadow": "Freedom becomes drift when nothing anchors the movement to a real destination.",
+    "astralNote": "Its astral note points toward riding the larger current without losing command of direction.",
+    "umbralNote": "Its umbral note suggests reducing ambition until the route is better known.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-thordan",
+    "name": "King Thordan, Sanctified Will",
+    "stratum": "Primal",
+    "element": null,
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 1,
+    "core": "Consecrated authority suggests the matter is being justified through vision, hierarchy, and inherited mandate.",
+    "shadow": "Sanctity becomes tyranny when righteousness is used to shield ambition from scrutiny.",
+    "astralNote": "Its astral note points toward testing lofty claims against practical consequence.",
+    "umbralNote": "Its umbral note suggests distrusting any command that cannot endure quiet examination.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-alexander",
+    "name": "Alexander, the Immutable",
+    "stratum": "Primal",
+    "element": "Earth",
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -2,
+    "core": "Massive order and structure suggest the pattern is being enclosed by systems that claim permanence.",
+    "shadow": "Order becomes imprisonment when certainty is bought at the cost of all living motion.",
+    "astralNote": "Its astral note points toward using structure with precision rather than reverence.",
+    "umbralNote": "Its umbral note suggests questioning any solution that demands surrender to inevitability.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-sophia",
+    "name": "Sophia, Keeper of Equilibrium",
+    "stratum": "Primal",
+    "element": "Lightning",
+    "rank": null,
+    "polarity": "Balanced",
+    "polarityWeight": 0,
+    "core": "A poised and demanding balance suggests the question is being measured with exacting and unstable symmetry.",
+    "shadow": "Balance becomes cruelty when equivalence is enforced where the burdens are not truly equal.",
+    "astralNote": "Its astral note points toward correcting the scale before it tips irretrievably.",
+    "umbralNote": "Its umbral note suggests examining whether the standard itself is unjust.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-zurvan",
+    "name": "Zurvan, the Demon",
+    "stratum": "Primal",
+    "element": "Fire",
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 2,
+    "core": "Imprisoned wrath suggests the matter is storing force that may break containment if left unexamined.",
+    "shadow": "Liberation becomes devastation when resentment is given the full field unchecked.",
+    "astralNote": "Its astral note points toward dealing with the contained pressure before it chooses its own release.",
+    "umbralNote": "Its umbral note suggests reinforcing restraint while the deeper cause is uncovered.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-susano",
+    "name": "Susano, Lord of the Revel",
+    "stratum": "Primal",
+    "element": "Lightning",
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 1,
+    "core": "Exultant force suggests the matter is energized by challenge, display, and a taste for the bold gesture.",
+    "shadow": "Joy becomes recklessness when exhilaration is mistaken for wisdom.",
+    "astralNote": "Its astral note points toward meeting the surge with courage and a steady hand.",
+    "umbralNote": "Its umbral note suggests refusing any triumph that relies only on noise and momentum.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-lakshmi",
+    "name": "Lakshmi, Lady of Bliss",
+    "stratum": "Primal",
+    "element": "Water",
+    "rank": null,
+    "polarity": "Balanced",
+    "polarityWeight": 0,
+    "core": "Gentle enchantment suggests the matter may be softened by comfort, beauty, or the promise of relief.",
+    "shadow": "Mercy becomes seduction when comfort is used to dissolve will and judgment.",
+    "astralNote": "Its astral note points toward accepting grace without surrendering discernment.",
+    "umbralNote": "Its umbral note suggests testing whether ease is healing or merely numbing.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-shinryu",
+    "name": "Shinryu, Devourer of Horizons",
+    "stratum": "Primal",
+    "element": null,
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 2,
+    "core": "Boundless appetite and reactive force suggest the pattern may outgrow every frame currently containing it.",
+    "shadow": "Magnitude becomes monstrosity when suffering is converted into fuel without measure.",
+    "astralNote": "Its astral note points toward recognizing the true scale of what has been awakened.",
+    "umbralNote": "Its umbral note suggests preserving what can endure rather than chasing mastery over the whole storm.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-tsukuyomi",
+    "name": "Tsukuyomi, Moonlit Divisor",
+    "stratum": "Primal",
+    "element": "Ice",
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -1,
+    "core": "Divided light suggests the matter is cut between tenderness and judgment, memory and retribution.",
+    "shadow": "Sorrow becomes cruelty when pain is refined into a principle rather than healed.",
+    "astralNote": "Its astral note points toward naming the split directly instead of disguising it as balance.",
+    "umbralNote": "Its umbral note suggests resting with the grief before allowing it to instruct action.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-suzaku",
+    "name": "Suzaku, Flame of Longing",
+    "stratum": "Primal",
+    "element": "Fire",
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 1,
+    "core": "Devotion carried into flame suggests the matter is being driven by love, grief, and the refusal to let the heart cool.",
+    "shadow": "Longing becomes ruin when remembrance is fed until it consumes the living present.",
+    "astralNote": "Its astral note points toward honoring feeling while refusing its most destructive excess.",
+    "umbralNote": "Its umbral note suggests cooling the fever before asking it to guide the next step.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-seiryu",
+    "name": "Seiryu, Storm of Reversal",
+    "stratum": "Primal",
+    "element": "Water",
+    "rank": null,
+    "polarity": "Balanced",
+    "polarityWeight": 0,
+    "core": "Turbulent turning suggests the old current is meeting resistance and seeking another shape through conflict.",
+    "shadow": "Correction becomes vengeance when reversal is pursued for its own satisfaction.",
+    "astralNote": "Its astral note points toward redirecting the force rather than merely opposing it.",
+    "umbralNote": "Its umbral note suggests yielding enough to study the current before acting against it.",
+    "flags": [
+      "Amplify"
+    ]
+  },
+  {
+    "id": "primal-byakko",
+    "name": "Byakko, Lord of the Long Guard",
+    "stratum": "Primal",
+    "element": "Lightning",
+    "rank": null,
+    "polarity": "Balanced",
+    "polarityWeight": 0,
+    "core": "Vigilant strength suggests the pattern is held by loyalty, patience, and a force that has endured long watch.",
+    "shadow": "Loyalty becomes burden when the guard is never relieved and the wound is never examined.",
+    "astralNote": "Its astral note points toward using tested strength in service of a worthy defense.",
+    "umbralNote": "Its umbral note suggests lowering the guard just enough to see what it has been protecting.",
+    "flags": [
+      "Amplify"
+    ]
+  }
+]

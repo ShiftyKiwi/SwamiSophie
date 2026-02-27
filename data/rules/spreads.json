@@ -1,0 +1,44 @@
+[
+  {
+    "id": "aether-pulse",
+    "name": "Aether Pulse",
+    "cardCount": 3,
+    "layout": "row",
+    "axisIndex": 2,
+    "positions": [
+      {
+        "index": 1,
+        "name": "Origin",
+        "description": "The influence already in motion."
+      },
+      {
+        "index": 2,
+        "name": "Axis",
+        "description": "The central pressure shaping the reading."
+      },
+      {
+        "index": 3,
+        "name": "Horizon",
+        "description": "The direction the pattern currently suggests."
+      }
+    ]
+  },
+  {
+    "id": "convergence-of-the-star",
+    "name": "Convergence of the Star",
+    "cardCount": 9,
+    "layout": "grid3x3",
+    "axisIndex": 5,
+    "positions": [
+      { "index": 1, "name": "Northwest", "description": "The distant pressure already forming." },
+      { "index": 2, "name": "North", "description": "The thought currently overhead." },
+      { "index": 3, "name": "Northeast", "description": "The pressure arriving from the edge." },
+      { "index": 4, "name": "West", "description": "The influence pressing from habit." },
+      { "index": 5, "name": "Axis", "description": "The central pattern around which the reading turns." },
+      { "index": 6, "name": "East", "description": "The influence pressing from change." },
+      { "index": 7, "name": "Southwest", "description": "The burden anchored in recent action." },
+      { "index": 8, "name": "South", "description": "The immediate practical consequence." },
+      { "index": 9, "name": "Southeast", "description": "The outcome now taking shape." }
+    ]
+  }
+]

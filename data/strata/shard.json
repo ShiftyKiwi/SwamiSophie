@@ -1,0 +1,352 @@
+[
+  {
+    "id": "shard-fractured-oath",
+    "name": "Shard of the Fractured Oath",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -1,
+    "core": "A break in alignment suggests the original purpose has been split from its present expression.",
+    "shadow": "Fracture becomes distortion when the broken piece is mistaken for the whole.",
+    "astralNote": "Its astral note indicates the split can be repaired only by naming it plainly.",
+    "umbralNote": "Its umbral note suggests not forcing a false unity before the break is understood.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-echoing-reflection",
+    "name": "Shard of Echoing Reflection",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Balanced",
+    "polarityWeight": 0,
+    "core": "A reflected pattern suggests the present issue is repeating in a smaller and more revealing form.",
+    "shadow": "Reflection becomes confusion when echoes are treated as independent truths.",
+    "astralNote": "Its astral note points toward using the smaller pattern as a guide to the larger one.",
+    "umbralNote": "Its umbral note suggests waiting until the echo settles into a clearer shape.",
+    "flags": []
+  },
+  {
+    "id": "shard-sundered-crown",
+    "name": "Shard of the Sundered Crown",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 1,
+    "core": "A claim to authority suggests the symbol remains active even after the true center has broken apart.",
+    "shadow": "Authority becomes distortion when the emblem is obeyed after its legitimacy has failed.",
+    "astralNote": "Its astral note points toward testing whether the sign still carries real authority.",
+    "umbralNote": "Its umbral note suggests treating inherited power with greater suspicion.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-hollow-vow",
+    "name": "Shard of the Hollow Vow",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -1,
+    "core": "An empty promise suggests form remains where substance has quietly withdrawn.",
+    "shadow": "Form becomes deception when the vow is maintained only to preserve appearance.",
+    "astralNote": "Its astral note indicates the promise can still be repaired if truth is restored to it.",
+    "umbralNote": "Its umbral note suggests assuming less and verifying more.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-borrowed-light",
+    "name": "Shard of Borrowed Light",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 1,
+    "core": "A secondhand brilliance suggests the matter is being guided by reflected conviction rather than a native center.",
+    "shadow": "Borrowed light becomes false certainty when imitation is mistaken for revelation.",
+    "astralNote": "Its astral note points toward using the reflection carefully without surrendering judgment to it.",
+    "umbralNote": "Its umbral note suggests tracing the light back to its true source before trusting it.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-forked-path",
+    "name": "Shard of the Forked Path",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Balanced",
+    "polarityWeight": 0,
+    "core": "A divided route suggests the original movement has split into alternatives that no longer agree on their destination.",
+    "shadow": "Choice becomes confusion when each branch claims the whole pattern for itself.",
+    "astralNote": "Its astral note points toward mapping the divergence before choosing which line to strengthen.",
+    "umbralNote": "Its umbral note suggests refusing to commit until the points of separation are understood.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-veiled-name",
+    "name": "Shard of the Veiled Name",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -1,
+    "core": "A hidden designation suggests the truth of the matter is being approached through aliases, substitutions, or silence.",
+    "shadow": "Concealment becomes distortion when the missing name alters the meaning of everything around it.",
+    "astralNote": "Its astral note indicates the veil can be lifted with careful and exact language.",
+    "umbralNote": "Its umbral note suggests noting what cannot yet be named instead of forcing a false title.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-reversed-sigil",
+    "name": "Shard of the Reversed Sigil",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 1,
+    "core": "A sign turned inward suggests the pattern is still potent, but now acts against its stated purpose.",
+    "shadow": "Reversal becomes sabotage when the sign is trusted after its direction has plainly changed.",
+    "astralNote": "Its astral note points toward correcting the symbol before its force spreads further.",
+    "umbralNote": "Its umbral note suggests tracing the inversion back to the point where it began.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-split-mirror",
+    "name": "Shard of the Split Mirror",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Balanced",
+    "polarityWeight": 0,
+    "core": "A fractured reflection suggests the matter is presenting multiple true-looking faces that do not reconcile cleanly.",
+    "shadow": "Multiplicity becomes distortion when every fragment is treated as a complete account.",
+    "astralNote": "Its astral note points toward comparing the pieces until the inconsistency becomes visible.",
+    "umbralNote": "Its umbral note suggests resisting any urge to choose the most flattering reflection too quickly.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-drifting-axis",
+    "name": "Shard of the Drifting Axis",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 1,
+    "core": "A moved center suggests the question is being organized around a principle that no longer sits where it once did.",
+    "shadow": "Displacement becomes distortion when the old center is still treated as fixed after it has already shifted.",
+    "astralNote": "Its astral note points toward identifying the new center before further action is taken.",
+    "umbralNote": "Its umbral note suggests slowing down until the reorganization can be measured accurately.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-false-horizon",
+    "name": "Shard of the False Horizon",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -1,
+    "core": "An apparent destination suggests the field is offering a stopping point that may not actually resolve the journey.",
+    "shadow": "Hope becomes distortion when the first horizon is mistaken for the final one.",
+    "astralNote": "Its astral note points toward testing the destination before building around it.",
+    "umbralNote": "Its umbral note suggests conserving effort until the horizon proves real.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-ashen-memory",
+    "name": "Shard of Ashen Memory",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -2,
+    "core": "A burned remembrance suggests the pattern is carrying loss that has already altered the shape of recollection.",
+    "shadow": "Memory becomes distortion when absence is allowed to overwrite what truly occurred.",
+    "astralNote": "Its astral note points toward recovering what can still be named from the ruin.",
+    "umbralNote": "Its umbral note suggests treating memory as wounded rather than neutral.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-gilded-mask",
+    "name": "Shard of the Gilded Mask",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 1,
+    "core": "A polished surface suggests the field is being made more acceptable than it truly is.",
+    "shadow": "Presentation becomes distortion when beauty is used to interrupt scrutiny.",
+    "astralNote": "Its astral note points toward separating what is appealing from what is true.",
+    "umbralNote": "Its umbral note suggests distrusting any answer that arrives already perfected.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-unfastened-gate",
+    "name": "Shard of the Unfastened Gate",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Balanced",
+    "polarityWeight": 0,
+    "core": "A boundary left unsecured suggests the pattern is admitting influences it was not meant to carry.",
+    "shadow": "Openness becomes distortion when every threshold is treated as harmless.",
+    "astralNote": "Its astral note points toward identifying what entered and whether it belongs.",
+    "umbralNote": "Its umbral note suggests securing the gate before evaluating the new traffic.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-waning-chorus",
+    "name": "Shard of the Waning Chorus",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -1,
+    "core": "A fading consensus suggests agreement is weakening faster than the appearance of harmony admits.",
+    "shadow": "Consensus becomes distortion when silence is mistaken for assent.",
+    "astralNote": "Its astral note points toward restoring clarity by asking who has already fallen quiet.",
+    "umbralNote": "Its umbral note suggests assuming less unity than the surface implies.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-redacted-truth",
+    "name": "Shard of Redacted Truth",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -2,
+    "core": "An altered record suggests the matter has been shaped by omission, deletion, or managed forgetting.",
+    "shadow": "Editing becomes distortion when the missing part determines the meaning of what remains.",
+    "astralNote": "Its astral note points toward recovering what was removed before drawing conclusions.",
+    "umbralNote": "Its umbral note suggests distrusting any account that arrives too cleanly arranged.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-thin-boundary",
+    "name": "Shard of the Thin Boundary",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Balanced",
+    "polarityWeight": 0,
+    "core": "A weakened separation suggests two patterns are beginning to overlap in ways neither fully contains.",
+    "shadow": "Contact becomes distortion when crossed boundaries are treated as natural after the fact.",
+    "astralNote": "Its astral note points toward tracing the line before the overlap widens.",
+    "umbralNote": "Its umbral note suggests reducing movement across the boundary until its integrity is known.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-broken-standard",
+    "name": "Shard of the Broken Standard",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 1,
+    "core": "A damaged banner suggests the shared symbol still gathers force even after its claim has been compromised.",
+    "shadow": "Loyalty becomes distortion when the standard is followed after the cause has fractured.",
+    "astralNote": "Its astral note points toward reexamining the symbol before rallying under it again.",
+    "umbralNote": "Its umbral note suggests letting the standard fall if it no longer names the truth.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-counterfeit-mercy",
+    "name": "Shard of Counterfeit Mercy",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Balanced",
+    "polarityWeight": 0,
+    "core": "A false gentleness suggests the field may be softening its language while preserving its harm.",
+    "shadow": "Mercy becomes distortion when leniency is offered only to delay real accountability.",
+    "astralNote": "Its astral note points toward testing whether the grace offered changes the structure or only the tone.",
+    "umbralNote": "Its umbral note suggests refusing comfort that leaves the wound untouched.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-divided-flame",
+    "name": "Shard of the Divided Flame",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 1,
+    "core": "A split fire suggests the same force is now feeding opposing meanings at once.",
+    "shadow": "Passion becomes distortion when every side claims the whole blaze for itself.",
+    "astralNote": "Its astral note points toward identifying which fire still serves the true work.",
+    "umbralNote": "Its umbral note suggests reducing fuel until the divided flames separate cleanly.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-tilted-scale",
+    "name": "Shard of the Tilted Scale",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Balanced",
+    "polarityWeight": 0,
+    "core": "An uneven measure suggests the judgment shaping the matter is already leaning, even if it still claims neutrality.",
+    "shadow": "Fairness becomes distortion when the scale is treated as just after the weights have been tampered with.",
+    "astralNote": "Its astral note points toward remeasuring the claim before acting on the verdict.",
+    "umbralNote": "Its umbral note suggests assuming hidden pressure until the balance is proven.",
+    "flags": [
+      "Distort"
+    ]
+  },
+  {
+    "id": "shard-last-echo",
+    "name": "Shard of the Last Echo",
+    "stratum": "Shard",
+    "element": null,
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -1,
+    "core": "A final repetition suggests the pattern is fading, but not before one last and possibly misleading recurrence.",
+    "shadow": "Repetition becomes distortion when the last echo is treated as the living source.",
+    "astralNote": "Its astral note points toward using the echo as evidence, not as origin.",
+    "umbralNote": "Its umbral note suggests waiting for the silence after the echo before deciding what remains true.",
+    "flags": [
+      "Distort"
+    ]
+  }
+]

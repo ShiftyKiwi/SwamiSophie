@@ -1,0 +1,40 @@
+{
+  "authorityOrder": [
+    "Calamity",
+    "Crystal",
+    "Divine",
+    "Primal",
+    "Shard",
+    "Persona",
+    "Court",
+    "Element"
+  ],
+  "scaleRules": {
+    "minor": {
+      "conditions": [
+        { "stratumAbsent": "Calamity" },
+        { "axisNotStratum": "Crystal" },
+        { "maxCountByStratum": { "Primal": 1 } }
+      ]
+    },
+    "major": {
+      "conditionsAny": [
+        { "axisIsStratum": "Crystal" },
+        { "minCountByStratum": { "Primal": 2 } }
+      ]
+    },
+    "era": {
+      "conditionsAny": [
+        { "axisIsStratum": "Calamity" }
+      ]
+    }
+  },
+  "polarity": {
+    "astralThreshold": 2,
+    "umbralThreshold": -2,
+    "divineBalanceCardIds": [
+      "divine-radiant-balance"
+    ],
+    "stabilizeByOneTierIfBalancePresent": true
+  }
+}

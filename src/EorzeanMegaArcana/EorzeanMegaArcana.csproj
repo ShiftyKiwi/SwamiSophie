@@ -1,0 +1,22 @@
+<Project Sdk="Dalamud.NET.Sdk/14.0.1">
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>EorzeanMegaArcana</AssemblyName>
+    <RootNamespace>EorzeanMegaArcana</RootNamespace>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <Author>Nick</Author>
+    <Name>Swami Sophie</Name>
+    <InternalName>SwamiSophie</InternalName>
+    <Punchline>The Great and Mystical Swami Sophie will give you chillingly accurate readings.</Punchline>
+    <Description>Draw arcane spreads and receive theatrical omen readings from Swami Sophie. Command: /swami</Description>
+    <ApplicableVersion>any</ApplicableVersion>
+    <Tags>divination,reading,lore,ui</Tags>
+    <RunDalamudPackager Condition="'$(RunDalamudPackager)' == '' and '$(Configuration)' == 'Release'">true</RunDalamudPackager>
+    <RunDalamudPackager Condition="'$(RunDalamudPackager)' == ''">false</RunDalamudPackager>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="SwamiSophie.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\data\**\*.json" Link="data\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" Visible="false" />
+  </ItemGroup>
+</Project>

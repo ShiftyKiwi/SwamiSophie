@@ -1,0 +1,233 @@
+[
+  {
+    "id": "calamity-world-rewritten",
+    "name": "Calamity: World Rewritten",
+    "stratum": "Calamity",
+    "element": null,
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -2,
+    "core": "The current structure suggests it may not survive intact; the reading points toward a change large enough to reorder the field itself.",
+    "shadow": "Upheaval becomes ruin when collapse is treated as cleansing for its own sake.",
+    "astralNote": "Its astral note indicates rebuilding can begin only after the break is faced directly.",
+    "umbralNote": "Its umbral note strongly supports caution, shelter, and acceptance that the old arrangement is ending.",
+    "flags": [
+      "Override",
+      "Distort"
+    ]
+  },
+  {
+    "id": "calamity-falling-red-moon",
+    "name": "Calamity: Falling Red Moon",
+    "stratum": "Calamity",
+    "element": null,
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 2,
+    "core": "A spectacular disruption suggests that what seemed distant is now descending into immediate consequence.",
+    "shadow": "Catastrophe becomes fixation when spectacle distracts from the necessary response.",
+    "astralNote": "Its astral note points toward urgent adaptation under extreme pressure.",
+    "umbralNote": "Its umbral note suggests reducing exposure and preserving what can still be saved.",
+    "flags": [
+      "Override",
+      "Distort"
+    ]
+  },
+  {
+    "id": "calamity-sundered-sky",
+    "name": "Calamity: Sundered Sky",
+    "stratum": "Calamity",
+    "element": null,
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 2,
+    "core": "A broken firmament suggests the scale of the crisis exceeds ordinary shelter and demands a larger reckoning.",
+    "shadow": "Magnitude becomes paralysis when the immensity of the damage is used as a reason not to act at all.",
+    "astralNote": "Its astral note points toward immediate reprioritization under altered conditions.",
+    "umbralNote": "Its umbral note suggests preserving what remains viable while the larger rupture continues to unfold.",
+    "flags": [
+      "Override",
+      "Distort"
+    ]
+  },
+  {
+    "id": "calamity-blackened-tide",
+    "name": "Calamity: Blackened Tide",
+    "stratum": "Calamity",
+    "element": null,
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -2,
+    "core": "A poisoned flood suggests the destructive force is spreading through what once carried life and continuity.",
+    "shadow": "Corruption becomes inevitability when contamination is accepted as the new order without resistance.",
+    "astralNote": "Its astral note indicates decisive containment is still meaningful even in the midst of loss.",
+    "umbralNote": "Its umbral note suggests withdrawal from the tainted current until the scope of damage is known.",
+    "flags": [
+      "Override",
+      "Distort"
+    ]
+  },
+  {
+    "id": "calamity-city-of-ash",
+    "name": "Calamity: City of Ash",
+    "stratum": "Calamity",
+    "element": null,
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -1,
+    "core": "A ruined habitation suggests that systems once relied upon may now exist only as warning and residue.",
+    "shadow": "Loss becomes identity when ruin is treated as the only possible future after devastation.",
+    "astralNote": "Its astral note points toward learning from the remains without lingering in them.",
+    "umbralNote": "Its umbral note suggests grieving the destruction before asking what can be rebuilt.",
+    "flags": [
+      "Override"
+    ]
+  },
+  {
+    "id": "calamity-broken-throne",
+    "name": "Calamity: Broken Throne",
+    "stratum": "Calamity",
+    "element": null,
+    "rank": null,
+    "polarity": "Balanced",
+    "polarityWeight": 0,
+    "core": "A shattered seat of rule suggests legitimacy has failed before order has been restored.",
+    "shadow": "Collapse becomes opportunism when the fall of authority is treated only as an opening for appetite.",
+    "astralNote": "Its astral note points toward rebuilding governance from what still has standing.",
+    "umbralNote": "Its umbral note suggests resisting any rush to crown a replacement before the fracture is understood.",
+    "flags": [
+      "Override"
+    ]
+  },
+  {
+    "id": "calamity-hollow-sun",
+    "name": "Calamity: Hollow Sun",
+    "stratum": "Calamity",
+    "element": null,
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 1,
+    "core": "An emptied brilliance suggests the source of guidance or vitality may still shine while failing to sustain what depends upon it.",
+    "shadow": "Radiance becomes fraud when appearance of strength masks inward exhaustion.",
+    "astralNote": "Its astral note points toward identifying what still truly nourishes and what only imitates it.",
+    "umbralNote": "Its umbral note suggests reducing dependence on the failing center before it gives out entirely.",
+    "flags": [
+      "Override",
+      "Distort"
+    ]
+  },
+  {
+    "id": "calamity-cinder-rain",
+    "name": "Calamity: Cinder Rain",
+    "stratum": "Calamity",
+    "element": null,
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 1,
+    "core": "A slow-falling ruin suggests the destructive event is ongoing and arriving in waves rather than one clean strike.",
+    "shadow": "Persistence becomes terror when each new sign is treated as proof that no response is possible.",
+    "astralNote": "Its astral note points toward maintaining response over duration rather than expecting one decisive correction.",
+    "umbralNote": "Its umbral note suggests sheltering between impacts and conserving strength for the long strain.",
+    "flags": [
+      "Override"
+    ]
+  },
+  {
+    "id": "calamity-emptied-sea",
+    "name": "Calamity: Emptied Sea",
+    "stratum": "Calamity",
+    "element": null,
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -2,
+    "core": "A vanished body suggests the expected support, resource, or emotional depth has been stripped away beyond ordinary loss.",
+    "shadow": "Absence becomes doom when emptiness is mistaken for finality rather than altered condition.",
+    "astralNote": "Its astral note points toward acting from the truth of scarcity rather than the memory of abundance.",
+    "umbralNote": "Its umbral note suggests not spending what no longer exists in the old measure.",
+    "flags": [
+      "Override"
+    ]
+  },
+  {
+    "id": "calamity-iron-night",
+    "name": "Calamity: Iron Night",
+    "stratum": "Calamity",
+    "element": null,
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -1,
+    "core": "A long and metallic darkness suggests the crisis is becoming systemic, impersonal, and difficult to soften through ordinary mercy.",
+    "shadow": "Endurance becomes normalization when the machinery of the harm is accepted as permanent.",
+    "astralNote": "Its astral note points toward identifying the rigid structure within the disaster before confronting it.",
+    "umbralNote": "Its umbral note suggests reducing direct exposure while the system remains unbroken.",
+    "flags": [
+      "Override"
+    ]
+  },
+  {
+    "id": "calamity-sevenfold-wound",
+    "name": "Calamity: Sevenfold Wound",
+    "stratum": "Calamity",
+    "element": null,
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -2,
+    "core": "Layered injury suggests the present crisis is not singular but compounded across several linked domains.",
+    "shadow": "Complexity becomes despair when the many wounds are used to deny the value of treating any one of them.",
+    "astralNote": "Its astral note points toward triage and sequencing under conditions of serious damage.",
+    "umbralNote": "Its umbral note suggests resisting any solution that pretends the harm is simple.",
+    "flags": [
+      "Override",
+      "Distort"
+    ]
+  },
+  {
+    "id": "calamity-void-harvest",
+    "name": "Calamity: Void Harvest",
+    "stratum": "Calamity",
+    "element": null,
+    "rank": null,
+    "polarity": "Astral",
+    "polarityWeight": 2,
+    "core": "Predatory taking suggests the crisis is feeding upon the very efforts made to withstand it.",
+    "shadow": "Devouring force becomes nihilism when sacrifice is treated as proof that nothing should be defended.",
+    "astralNote": "Its astral note points toward cutting off the source of the harvest before committing further resources.",
+    "umbralNote": "Its umbral note suggests withholding fuel from what grows stronger through your response.",
+    "flags": [
+      "Override",
+      "Distort"
+    ]
+  },
+  {
+    "id": "calamity-frozen-dawn",
+    "name": "Calamity: Frozen Dawn",
+    "stratum": "Calamity",
+    "element": null,
+    "rank": null,
+    "polarity": "Umbral",
+    "polarityWeight": -1,
+    "core": "A dawn that cannot fully arrive suggests renewal is being delayed at the threshold by conditions not yet resolved.",
+    "shadow": "Delay becomes surrender when the withheld dawn is treated as proof that change will never come.",
+    "astralNote": "Its astral note points toward preparing for renewal even before the full light returns.",
+    "umbralNote": "Its umbral note suggests conserving hope and resources while the freeze still holds.",
+    "flags": [
+      "Override"
+    ]
+  },
+  {
+    "id": "calamity-last-fall",
+    "name": "Calamity: Last Fall",
+    "stratum": "Calamity",
+    "element": null,
+    "rank": null,
+    "polarity": "Balanced",
+    "polarityWeight": 0,
+    "core": "A terminal descent suggests a cycle is reaching its irreversible drop and should be recognized as such.",
+    "shadow": "Finality becomes melodrama when the fall is narrated as absolute before the ground is actually reached.",
+    "astralNote": "Its astral note points toward choosing carefully what must survive the descent.",
+    "umbralNote": "Its umbral note suggests accepting the end of the old height instead of wasting strength preserving it.",
+    "flags": [
+      "Override"
+    ]
+  }
+]

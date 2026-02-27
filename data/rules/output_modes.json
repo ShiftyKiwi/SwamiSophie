@@ -1,0 +1,17 @@
+[
+  {
+    "id": "concise",
+    "name": "Concise",
+    "description": "Header plus a restrained narrative block."
+  },
+  {
+    "id": "layered",
+    "name": "Layered",
+    "description": "Header plus doctrinal sections."
+  },
+  {
+    "id": "scholarly",
+    "name": "Scholarly",
+    "description": "Layered interpretation with explicit diagnostics."
+  }
+]
