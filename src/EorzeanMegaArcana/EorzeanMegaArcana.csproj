@@ -1,16 +1,19 @@
 <Project Sdk="Dalamud.NET.Sdk/14.0.1">
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AssemblyName>EorzeanMegaArcana</AssemblyName>
+    <AssemblyName>SwamiSophie</AssemblyName>
     <RootNamespace>EorzeanMegaArcana</RootNamespace>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
-    <Author>Nick</Author>
+    <Author>Shifty Kiwi</Author>
     <Name>Swami Sophie</Name>
     <InternalName>SwamiSophie</InternalName>
     <Punchline>The Great and Mystical Swami Sophie will give you chillingly accurate readings.</Punchline>
     <Description>Draw arcane spreads and receive theatrical omen readings from Swami Sophie. Command: /swami</Description>
     <ApplicableVersion>any</ApplicableVersion>
     <Tags>divination,reading,lore,ui</Tags>
+    <Version>1.0.0.1</Version>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
     <RunDalamudPackager Condition="'$(RunDalamudPackager)' == '' and '$(Configuration)' == 'Release'">true</RunDalamudPackager>
     <RunDalamudPackager Condition="'$(RunDalamudPackager)' == ''">false</RunDalamudPackager>
   </PropertyGroup>

@@ -40,14 +40,14 @@ jobs:
         shell: powershell
         run: |
           Add-Type -AssemblyName System.IO.Compression.FileSystem
-          $zipPath = Resolve-Path 'src\EorzeanMegaArcana\bin\Release\EorzeanMegaArcana\latest.zip'
+          $zipPath = Resolve-Path 'src\EorzeanMegaArcana\bin\Release\SwamiSophie\latest.zip'
           $archive = [IO.Compression.ZipFile]::OpenRead($zipPath)
           try {
             $entries = $archive.Entries.FullName
             $entries | Sort-Object | ForEach-Object { Write-Host $_ }
             $required = @(
-              'EorzeanMegaArcana.dll',
-              'EorzeanMegaArcana.json',
+              'SwamiSophie.dll',
+              'SwamiSophie.json',
               'data\rules\doctrine.json',
               'data\rules\spreads.json',
               'data\rules\output_modes.json'

@@ -1,11 +1,11 @@
 [
   {
-    "Author": "Nick",
+    "Author": "Shifty Kiwi",
     "Name": "Swami Sophie",
     "Punchline": "The Great and Mystical Swami Sophie will give you chillingly accurate readings.",
     "Description": "Draw arcane spreads and receive theatrical omen readings from Swami Sophie. Command: /swami",
-    "InternalName": "EorzeanMegaArcana",
-    "AssemblyVersion": "1.0.0.0",
+    "InternalName": "SwamiSophie",
+    "AssemblyVersion": "1.0.0.1",
     "RepoUrl": "https://github.com/ShiftyKiwi/SwamiSophie",
     "ApplicableVersion": "any",
     "CategoryTags": [
@@ -17,11 +17,11 @@
     "ImageUrls": [
       ""
     ],
-    "DownloadLinkInstall": "https://github.com/ShiftyKiwi/SwamiSophie/releases/download/v1.0.0.0/latest.zip",
+    "DownloadLinkInstall": "https://github.com/ShiftyKiwi/SwamiSophie/releases/download/v1.0.0.1/latest.zip",
     "IsHide": false,
     "IsTestingExclusive": false,
-    "DownloadLinkTesting": "https://github.com/ShiftyKiwi/SwamiSophie/releases/download/v1.0.0.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/ShiftyKiwi/SwamiSophie/releases/download/v1.0.0.0/latest.zip",
+    "DownloadLinkTesting": "https://github.com/ShiftyKiwi/SwamiSophie/releases/download/v1.0.0.1/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/ShiftyKiwi/SwamiSophie/releases/download/v1.0.0.1/latest.zip",
     "DownloadCount": 0,
     "LastUpdate": "1772206080"
   }

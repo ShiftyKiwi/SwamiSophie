@@ -8,15 +8,9 @@ Recommended place:
 
 - [`src/EorzeanMegaArcana/EorzeanMegaArcana.csproj`](./src/EorzeanMegaArcana/EorzeanMegaArcana.csproj)
 
-If you are versioning explicitly, add or update properties such as:
+The project currently defines version metadata directly in the project file.
 
-```xml
-<Version>1.0.0</Version>
-<AssemblyVersion>1.0.0.0</AssemblyVersion>
-<FileVersion>1.0.0.0</FileVersion>
-```
-
-Keep the Git tag aligned with the release version, for example `v1.0.0`.
+Keep the Git tag aligned with the release version, for example `v1.0.0.1`.
 
 ## 2. Build the release package
 
@@ -32,8 +26,8 @@ The repository pins the SDK in [`global.json`](./global.json), so local builds a
 
 The Release build produces the packaged output under:
 
-- `src/EorzeanMegaArcana/bin/Release/EorzeanMegaArcana/latest.zip`
-- `src/EorzeanMegaArcana/bin/Release/EorzeanMegaArcana/EorzeanMegaArcana.json`
+- `src/EorzeanMegaArcana/bin/Release/SwamiSophie/latest.zip`
+- `src/EorzeanMegaArcana/bin/Release/SwamiSophie/SwamiSophie.json`
 
 Other supporting build output is available under:
 
@@ -46,8 +40,8 @@ The current packaged zip contains the plugin DLL, generated manifest, and the JS
 Create and push a version tag:
 
 ```powershell
-git tag v1.0.0
-git push origin v1.0.0
+git tag v1.0.0.1
+git push origin v1.0.0.1
 ```
 
 ## 5. Create a GitHub Release
@@ -55,10 +49,10 @@ git push origin v1.0.0
 ### Manual
 
 1. Open the repository on GitHub.
-2. Create a new release from the tag, for example `v1.0.0`.
+2. Create a new release from the tag, for example `v1.0.0.1`.
 3. Upload:
    - `latest.zip`
-   - `EorzeanMegaArcana.json`
+   - `SwamiSophie.json`
 
 ### Automated
 
