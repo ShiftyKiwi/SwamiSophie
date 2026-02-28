@@ -52,6 +52,11 @@ Additional UI:
 - `Open Deck Browser` opens the searchable deck browser
 - `Open History` opens the in-memory reading history window
 
+## Documentation
+
+- [Usage Guide](./docs/USAGE.md)
+- [Interpretation Guide](./docs/INTERPRETATION.md)
+
 ## Data-Driven Design
 
 The reading system is driven by JSON data under [`/data`](./data):
