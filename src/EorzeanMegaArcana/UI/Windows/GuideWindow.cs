@@ -6,7 +6,7 @@ namespace EorzeanMegaArcana.UI.Windows;
 
 public sealed class GuideWindow : Window
 {
-    private const string Version = "1.0.0.1";
+    private const string Version = "1.0.0.2";
     private const string DalamudApiLevel = "14";
     private const string RepositoryUrl = "https://github.com/ShiftyKiwi/SwamiSophie";
 
@@ -165,3 +165,4 @@ public sealed class GuideWindow : Window
         ImGui.Spacing();
     }
 }
+
