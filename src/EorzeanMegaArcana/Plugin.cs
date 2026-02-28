@@ -26,6 +26,7 @@ public sealed class Plugin : IDalamudPlugin, IPluginLogAdapter
     private readonly MainWindow mainWindow;
     private readonly DeckBrowserWindow? deckBrowserWindow;
     private readonly HistoryWindow historyWindow;
+    private readonly GuideWindow guideWindow;
     private readonly ReadingHistoryService historyService;
     private readonly WindowSystem windowSystem = new("Swami Sophie");
 
@@ -85,8 +86,9 @@ public sealed class Plugin : IDalamudPlugin, IPluginLogAdapter
 
         this.Configuration = configuration;
         this.Log = StaticLog;
-        this.mainWindow = new MainWindow(configuration, this, readingService, this.historyService, loadError, ToggleDeckBrowser, ToggleHistoryWindow);
+        this.mainWindow = new MainWindow(configuration, this, readingService, this.historyService, loadError, ToggleDeckBrowser, ToggleHistoryWindow, ToggleGuideWindow);
         this.historyWindow = new HistoryWindow(this.historyService, readingService, this.mainWindow.RestoreHistoryEntry);
+        this.guideWindow = new GuideWindow();
 
         this.windowSystem.AddWindow(this.mainWindow);
         if (this.deckBrowserWindow is not null)
@@ -95,6 +97,7 @@ public sealed class Plugin : IDalamudPlugin, IPluginLogAdapter
         }
 
         this.windowSystem.AddWindow(this.historyWindow);
+        this.windowSystem.AddWindow(this.guideWindow);
 
         var commandInfo = new CommandInfo(OnCommand)
         {
@@ -149,6 +152,11 @@ public sealed class Plugin : IDalamudPlugin, IPluginLogAdapter
     public void ToggleHistoryWindow()
     {
         this.historyWindow.Toggle();
+    }
+
+    public void ToggleGuideWindow()
+    {
+        this.guideWindow.Toggle();
     }
 
     public void Error(Exception exception, string message)

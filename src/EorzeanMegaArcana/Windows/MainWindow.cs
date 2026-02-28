@@ -17,6 +17,7 @@ public sealed class MainWindow : Window, IDisposable
     private readonly string? loadError;
     private readonly Action toggleDeckBrowser;
     private readonly Action toggleHistoryWindow;
+    private readonly Action toggleGuideWindow;
 
     private int spreadIndex;
     private int outputModeIndex;
@@ -39,7 +40,8 @@ public sealed class MainWindow : Window, IDisposable
         ReadingHistoryService historyService,
         string? loadError,
         Action toggleDeckBrowser,
-        Action toggleHistoryWindow)
+        Action toggleHistoryWindow,
+        Action toggleGuideWindow)
         : base("Swami Sophie###SwamiSophieMainWindow")
     {
         this.configuration = configuration;
@@ -49,6 +51,7 @@ public sealed class MainWindow : Window, IDisposable
         this.loadError = loadError;
         this.toggleDeckBrowser = toggleDeckBrowser;
         this.toggleHistoryWindow = toggleHistoryWindow;
+        this.toggleGuideWindow = toggleGuideWindow;
         this.allowRepeats = configuration.DefaultAllowRepeats;
         this.useSeed = configuration.DefaultUseSeed;
         this.pinDraw = configuration.PinDraw;
@@ -246,6 +249,12 @@ public sealed class MainWindow : Window, IDisposable
         if (ImGui.Button("Open History"))
         {
             this.toggleHistoryWindow();
+        }
+
+        ImGui.SameLine();
+        if (ImGui.Button("Open Guide"))
+        {
+            this.toggleGuideWindow();
         }
 
         ImGui.TextDisabled(this.statusMessage);
