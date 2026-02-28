@@ -6,6 +6,10 @@ namespace EorzeanMegaArcana.UI.Windows;
 
 public sealed class GuideWindow : Window
 {
+    private const string Version = "1.0.0.1";
+    private const string DalamudApiLevel = "14";
+    private const string RepositoryUrl = "https://github.com/ShiftyKiwi/SwamiSophie";
+
     public GuideWindow()
         : base("Guides###SwamiSophieGuideWindow")
     {
@@ -32,6 +36,12 @@ public sealed class GuideWindow : Window
         if (ImGui.BeginTabItem("Interpretation"))
         {
             DrawInterpretationTab();
+            ImGui.EndTabItem();
+        }
+
+        if (ImGui.BeginTabItem("About"))
+        {
+            DrawAboutTab();
             ImGui.EndTabItem();
         }
 
@@ -119,6 +129,31 @@ public sealed class GuideWindow : Window
             "Position gives the reading shape.");
         ImGui.BulletText("Aether Pulse: Pressure, Axis, Direction.");
         ImGui.BulletText("Convergence of the Star: First Row, Second Row, Third Row.");
+
+        ImGui.EndChild();
+    }
+
+    private static void DrawAboutTab()
+    {
+        ImGui.BeginChild("GuideAbout", new Vector2(0, 0), false);
+
+        DrawSection(
+            "Swami Sophie",
+            "Offline, text-focused Eorzean Mega Arcana readings for Dalamud.");
+
+        ImGui.TextWrapped($"Version: {Version}");
+        ImGui.TextWrapped($"Dalamud API Level: {DalamudApiLevel}");
+        ImGui.TextWrapped("Author: Shifty Kiwi");
+        ImGui.TextWrapped("Framework: Dalamud");
+        ImGui.TextWrapped("Reference Scaffold: goatcorp SamplePlugin");
+        ImGui.Spacing();
+        ImGui.TextUnformatted("Repository");
+        ImGui.TextWrapped(RepositoryUrl);
+
+        if (ImGui.Button("Copy Repo Link"))
+        {
+            ImGui.SetClipboardText(RepositoryUrl);
+        }
 
         ImGui.EndChild();
     }
