@@ -10,6 +10,18 @@ It reads patterns of influence through:
 - personal lens (`Persona`)
 - behavioral manifestation (`Court`, `Element`)
 
+## Start With the Header
+
+Before reading any narrative text, look at the header.
+
+The header tells you:
+
+- how serious the pattern is (`Scale`)
+- what direction the field is moving (`Era State`)
+- how the pressure is likely to express itself (`Dominant Element`)
+- whether force is intensifying (`Escalation`)
+- whether the field is being corrected or contained (`Moderation`)
+
 ## 1. Read the Scale First
 
 Begin with `Scale`.
@@ -28,7 +40,7 @@ Era State describes direction of movement.
 - `Umbral` suggests withdrawal, compression, or consolidation.
 - `Transitional` suggests instability, mediation, or rebalancing.
 
-Era State also influences whether shadow meanings are emphasized.
+Era State also affects how readily Shadow meanings are emphasized.
 
 ## 3. Identify the Highest Authority Card
 
@@ -43,7 +55,7 @@ Interpret the draw through the doctrinal hierarchy:
 7. `Court`
 8. `Element`
 
-Higher tiers frame the lower tiers beneath them. If a `Calamity` appears, it sets the dominant interpretive pressure even when other cards remain important.
+Higher tiers frame the lower tiers beneath them. If a `Calamity` appears, it sets the dominant interpretive pressure even when lower cards remain relevant.
 
 ## 4. Watch Escalation and Moderation
 
@@ -63,9 +75,11 @@ Element describes how influence expresses itself.
 - `Lightning` — decision or revelation
 - `Water` — relationship
 
-Dominant Element is counted from both Element and Court cards.
+Dominant Element is counted from both Element and Court cards. If there is no clear majority, it is left unset.
 
 ## 6. Respect Position
+
+Position gives the draw shape.
 
 ### Aether Pulse
 
@@ -81,6 +95,65 @@ Dominant Element is counted from both Element and Court cards.
 
 Position is not ornamental. It defines where influence is operating.
 
+## Interpretation Bias
+
+Interpretation Bias is a tone filter, not a draw filter.
+
+It never changes the cards. It only changes how strongly the narrative emphasizes the constructive side or the shadow side of those cards.
+
+### Auto
+
+Uses the normal contextual rules.
+
+- if the field is tense, Umbral, or otherwise pressured, it may lean toward Shadow
+- if the field is stable or more open, it may lean toward Core
+
+Best when you want the system to decide naturally.
+
+### PreferCore
+
+Leans toward the constructive, solution-oriented side of the cards.
+
+Use it when you want the reading framed toward action, repair, growth, or practical next steps.
+
+### PreferShadow
+
+Leans toward tension, blind spots, distortion, or risk.
+
+Use it when you want to stress-test a situation or examine where the pressure is most likely to fail.
+
+### StrictAuto
+
+Uses Shadow only when the polarity logic actually requires it.
+
+It removes the extra dramatic push that `Auto` can apply under severe pressure such as Calamity conditions.
+
+Use it when you want the most restrained, analytical reading style.
+
+## How Bias Interacts With Era State
+
+Bias changes tone, but Era State still matters.
+
+- `Astral` fields tend to support outward, clearer, more assertive readings.
+- `Umbral` fields tend to support withdrawn, compressed, or more shadow-weighted readings.
+- `Transitional` fields sit between those poles.
+
+`StrictAuto` keeps that logic but removes the extra non-required dramatic push. `PreferCore` and `PreferShadow` intentionally override the default tonal lean.
+
+## How to Read in Order
+
+A stable reading method is:
+
+1. read `Scale`
+2. read `Era State`
+3. identify the highest authority card or stratum
+4. check `Escalation` and `Moderation`
+5. note the `Dominant Element`
+6. read the position meanings
+7. only then read the narrative details
+
+This keeps the interpretation grounded in doctrine instead of isolated card impressions.
+
 ## What This System Does Not Do
 
 Swami Sophie does not:
@@ -90,16 +163,3 @@ Swami Sophie does not:
 - replace judgment
 
 It reveals patterns of influence and suggests how they are arranged.
-
-## Final Principle
-
-Read the system in order:
-
-1. scale
-2. era state
-3. highest authority
-4. escalation versus moderation
-5. dominant element
-6. position
-
-This keeps the interpretation grounded in doctrine instead of isolated card impressions.

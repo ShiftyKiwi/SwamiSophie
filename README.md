@@ -38,6 +38,26 @@ dotnet build SwamiSophie.sln -c Release -clp:ErrorsOnly
 
 4. Use the generated plugin output with your local Dalamud development setup.
 
+## Quick Start
+
+1. Open the plugin with `/swami` or `/ema`.
+2. Choose a spread:
+   `Aether Pulse` for fast, focused readings.
+   `Convergence of the Star` for deeper, layered readings.
+3. Pick an output mode:
+   `Concise` for fast insight, `Layered` for structure, `Scholarly` for diagnostics.
+4. Leave `Interpretation Bias` on `Auto` unless you specifically want a more constructive, more critical, or more restrained tone.
+5. Enter a question if you want the reading framed around a specific issue.
+6. Click `Draw`.
+
+A good default setup for most users is:
+- `Aether Pulse`
+- `Concise`
+- `Auto`
+- `Allow Repeats` off
+- `Use Seed` off
+- `Pin Draw` off
+
 ## Usage
 
 Commands:
@@ -51,6 +71,7 @@ Additional UI:
 
 - `Open Deck Browser` opens the searchable deck browser
 - `Open History` opens the in-memory reading history window
+- `Open Guide` opens the in-plugin quick reference window
 
 ## Documentation
 
