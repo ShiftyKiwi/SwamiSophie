@@ -10,7 +10,7 @@ Recommended place:
 
 The project currently defines version metadata directly in the project file.
 
-Keep the Git tag aligned with the release version, for example `v1.0.0.3`.
+Keep the Git tag aligned with the release version, for example `v1.0.0.4`.
 
 ## 2. Build the release package
 
@@ -40,8 +40,8 @@ The current packaged zip contains the plugin DLL, generated manifest, and the JS
 Create and push a version tag:
 
 ```powershell
-git tag v1.0.0.3
-git push origin v1.0.0.3
+git tag v1.0.0.4
+git push origin v1.0.0.4
 ```
 
 ## 5. Create a GitHub Release
@@ -49,7 +49,7 @@ git push origin v1.0.0.3
 ### Manual
 
 1. Open the repository on GitHub.
-2. Create a new release from the tag, for example `v1.0.0.3`.
+2. Create a new release from the tag, for example `v1.0.0.4`.
 3. Upload:
    - `latest.zip`
    - `SwamiSophie.json`

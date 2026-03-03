@@ -11,9 +11,9 @@
     <Description>Draw arcane spreads and receive theatrical omen readings from Swami Sophie. Command: /swami</Description>
     <ApplicableVersion>any</ApplicableVersion>
     <Tags>divination,reading,lore,ui</Tags>
-    <Version>1.0.0.3</Version>
-    <AssemblyVersion>1.0.0.3</AssemblyVersion>
-    <FileVersion>1.0.0.3</FileVersion>
+    <Version>1.0.0.4</Version>
+    <AssemblyVersion>1.0.0.4</AssemblyVersion>
+    <FileVersion>1.0.0.4</FileVersion>
     <RunDalamudPackager Condition="'$(RunDalamudPackager)' == '' and '$(Configuration)' == 'Release'">true</RunDalamudPackager>
     <RunDalamudPackager Condition="'$(RunDalamudPackager)' == ''">false</RunDalamudPackager>
   </PropertyGroup>
