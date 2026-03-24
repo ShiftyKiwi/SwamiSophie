@@ -18,7 +18,7 @@ Swami Sophie is a Dalamud plugin for Final Fantasy XIV that delivers serious tar
 - Dalamud plugin environment
 - Requires Dalamud API level `14`
 - The repository is pinned to `.NET SDK 10.0.103` via [`global.json`](./global.json)
-- The project currently targets `Dalamud.NET.Sdk/14.0.1`
+- The project currently targets `Dalamud.NET.Sdk/14.0.2`
 
 ## Install
 
@@ -90,3 +90,4 @@ The plugin code loads and interprets this data at runtime rather than hardcoding
 ## Disclaimer
 
 This plugin is provided for lore and reading purposes only. It is not affiliated with Square Enix, Final Fantasy XIV, or goatcorp. Use of Dalamud and third-party plugins carries risk; use at your own risk and follow the rules, policies, and expectations relevant to your environment.
+

@@ -1,4 +1,4 @@
-<Project Sdk="Dalamud.NET.Sdk/14.0.1">
+<Project Sdk="Dalamud.NET.Sdk/14.0.2">
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyName>SwamiSophie</AssemblyName>
@@ -11,9 +11,9 @@
     <Description>Draw arcane spreads and receive theatrical omen readings from Swami Sophie. Command: /swami</Description>
     <ApplicableVersion>any</ApplicableVersion>
     <Tags>divination,reading,lore,ui</Tags>
-    <Version>1.0.0.5</Version>
-    <AssemblyVersion>1.0.0.5</AssemblyVersion>
-    <FileVersion>1.0.0.5</FileVersion>
+    <Version>1.0.0.6</Version>
+    <AssemblyVersion>1.0.0.6</AssemblyVersion>
+    <FileVersion>1.0.0.6</FileVersion>
     <RunDalamudPackager Condition="'$(RunDalamudPackager)' == '' and '$(Configuration)' == 'Release'">true</RunDalamudPackager>
     <RunDalamudPackager Condition="'$(RunDalamudPackager)' == ''">false</RunDalamudPackager>
   </PropertyGroup>
