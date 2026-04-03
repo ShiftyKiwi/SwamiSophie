@@ -23,12 +23,15 @@ public sealed class Plugin : IDalamudPlugin, IPluginLogAdapter
     [PluginService]
     internal static IPluginLog StaticLog { get; private set; } = null!;
 
-    private readonly MainWindow mainWindow;
-    private readonly DeckBrowserWindow? deckBrowserWindow;
-    private readonly HistoryWindow historyWindow;
-    private readonly GuideWindow guideWindow;
+    private readonly object initializationLock = new();
     private readonly ReadingHistoryService historyService;
     private readonly WindowSystem windowSystem = new("Swami Sophie");
+    private MainWindow? mainWindow;
+    private DeckBrowserWindow? deckBrowserWindow;
+    private HistoryWindow? historyWindow;
+    private GuideWindow? guideWindow;
+    private bool isInitialized;
+    private bool isDrawRegistered;
 
     public Plugin()
     {
@@ -44,28 +47,6 @@ public sealed class Plugin : IDalamudPlugin, IPluginLogAdapter
         }
 
         this.historyService = new ReadingHistoryService();
-        ReadingService? readingService = null;
-        string? loadError = null;
-
-        try
-        {
-            var assemblyDirectory = PluginInterface.AssemblyLocation.Directory?.FullName
-                ?? throw new InvalidOperationException("Unable to determine plugin assembly directory.");
-            var dataRoot = Path.Combine(assemblyDirectory, "data");
-            var dataBundle = new DataLoader(dataRoot).Load();
-            readingService = new ReadingService(
-                dataBundle,
-                new DeckService(dataBundle.AllCards),
-                new DrawService(),
-                new InterpretationEngine());
-            this.deckBrowserWindow = new DeckBrowserWindow(readingService.AllCards);
-        }
-        catch (Exception ex)
-        {
-            loadError = ex.Message;
-            StaticLog.Error(ex, "Failed to load plugin data.");
-        }
-
         if (configuration.PersistHistory)
         {
             try
@@ -86,18 +67,6 @@ public sealed class Plugin : IDalamudPlugin, IPluginLogAdapter
 
         this.Configuration = configuration;
         this.Log = StaticLog;
-        this.mainWindow = new MainWindow(configuration, this, readingService, this.historyService, loadError, ToggleDeckBrowser, ToggleHistoryWindow, ToggleGuideWindow);
-        this.historyWindow = new HistoryWindow(this.historyService, readingService, this.mainWindow.RestoreHistoryEntry);
-        this.guideWindow = new GuideWindow();
-
-        this.windowSystem.AddWindow(this.mainWindow);
-        if (this.deckBrowserWindow is not null)
-        {
-            this.windowSystem.AddWindow(this.deckBrowserWindow);
-        }
-
-        this.windowSystem.AddWindow(this.historyWindow);
-        this.windowSystem.AddWindow(this.guideWindow);
 
         var commandInfo = new CommandInfo(OnCommand)
         {
@@ -106,7 +75,6 @@ public sealed class Plugin : IDalamudPlugin, IPluginLogAdapter
 
         CommandManager.AddHandler(MainCommandName, commandInfo);
         CommandManager.AddHandler(AliasCommandName, commandInfo);
-        PluginInterface.UiBuilder.Draw += this.windowSystem.Draw;
         PluginInterface.UiBuilder.OpenMainUi += ToggleMainUi;
         PluginInterface.UiBuilder.OpenConfigUi += ToggleMainUi;
     }
@@ -117,11 +85,15 @@ public sealed class Plugin : IDalamudPlugin, IPluginLogAdapter
 
     public void Dispose()
     {
-        PluginInterface.UiBuilder.Draw -= this.windowSystem.Draw;
+        if (this.isDrawRegistered)
+        {
+            PluginInterface.UiBuilder.Draw -= this.windowSystem.Draw;
+        }
+
         PluginInterface.UiBuilder.OpenMainUi -= ToggleMainUi;
         PluginInterface.UiBuilder.OpenConfigUi -= ToggleMainUi;
         this.windowSystem.RemoveAllWindows();
-        this.mainWindow.Dispose();
+        this.mainWindow?.Dispose();
 
         try
         {
@@ -141,22 +113,26 @@ public sealed class Plugin : IDalamudPlugin, IPluginLogAdapter
 
     public void ToggleMainUi()
     {
-        this.mainWindow.Toggle();
+        EnsureInitialized();
+        this.mainWindow?.Toggle();
     }
 
     public void ToggleDeckBrowser()
     {
+        EnsureInitialized();
         this.deckBrowserWindow?.Toggle();
     }
 
     public void ToggleHistoryWindow()
     {
-        this.historyWindow.Toggle();
+        EnsureInitialized();
+        this.historyWindow?.Toggle();
     }
 
     public void ToggleGuideWindow()
     {
-        this.guideWindow.Toggle();
+        EnsureInitialized();
+        this.guideWindow?.Toggle();
     }
 
     public void Error(Exception exception, string message)
@@ -167,5 +143,69 @@ public sealed class Plugin : IDalamudPlugin, IPluginLogAdapter
     private void OnCommand(string command, string arguments)
     {
         ToggleMainUi();
+    }
+
+    // Keep plugin boot lightweight and only build the data/UI stack when the user first opens it.
+    private void EnsureInitialized()
+    {
+        if (this.isInitialized)
+        {
+            return;
+        }
+
+        lock (this.initializationLock)
+        {
+            if (this.isInitialized)
+            {
+                return;
+            }
+
+            ReadingService? readingService = null;
+            string? loadError = null;
+
+            try
+            {
+                var assemblyDirectory = PluginInterface.AssemblyLocation.Directory?.FullName
+                    ?? throw new InvalidOperationException("Unable to determine plugin assembly directory.");
+                var dataRoot = Path.Combine(assemblyDirectory, "data");
+                var dataBundle = new DataLoader(dataRoot).Load();
+                readingService = new ReadingService(
+                    dataBundle,
+                    new DeckService(dataBundle.AllCards),
+                    new DrawService(),
+                    new InterpretationEngine());
+                this.deckBrowserWindow = new DeckBrowserWindow(readingService.AllCards);
+            }
+            catch (Exception ex)
+            {
+                loadError = ex.Message;
+                this.Log.Error(ex, "Failed to load plugin data.");
+            }
+
+            this.mainWindow = new MainWindow(
+                this.Configuration,
+                this,
+                readingService,
+                this.historyService,
+                loadError,
+                ToggleDeckBrowser,
+                ToggleHistoryWindow,
+                ToggleGuideWindow);
+            this.historyWindow = new HistoryWindow(this.historyService, readingService, this.mainWindow.RestoreHistoryEntry);
+            this.guideWindow = new GuideWindow();
+
+            this.windowSystem.AddWindow(this.mainWindow);
+            if (this.deckBrowserWindow is not null)
+            {
+                this.windowSystem.AddWindow(this.deckBrowserWindow);
+            }
+
+            this.windowSystem.AddWindow(this.historyWindow);
+            this.windowSystem.AddWindow(this.guideWindow);
+
+            PluginInterface.UiBuilder.Draw += this.windowSystem.Draw;
+            this.isDrawRegistered = true;
+            this.isInitialized = true;
+        }
     }
 }

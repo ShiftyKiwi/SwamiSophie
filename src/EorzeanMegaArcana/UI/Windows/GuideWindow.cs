@@ -6,9 +6,9 @@ namespace EorzeanMegaArcana.UI.Windows;
 
 public sealed class GuideWindow : Window
 {
-    private const string Version = "1.0.0.3";
     private const string DalamudApiLevel = "14";
     private const string RepositoryUrl = "https://github.com/ShiftyKiwi/SwamiSophie";
+    private static readonly string Version = typeof(GuideWindow).Assembly.GetName().Version?.ToString(4) ?? "Unknown";
 
     public GuideWindow()
         : base("Guides###SwamiSophieGuideWindow")
